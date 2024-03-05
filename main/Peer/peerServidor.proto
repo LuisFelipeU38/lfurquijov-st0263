@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+service ServicioEntrePeers {
+    rpc ObtenerPuertoParaUsuario(SolicitudPuertoParaUsuario) returns (RespuestaPuerto) {}
+    rpc EstablecerPuertoUsuario(SolicitudPuertoUsuario) returns (Respuesta) {}
+    rpc ObtenerArchivo(SolicitudArchivo) returns (RespuestaArchivo) {}
+    rpc CrearArchivo(SolicitudCrearArchivo) returns (RespuestaCrearArchivo) {}
+}
+
+message SolicitudPuertoParaUsuario {
+    string usuario = 1;
+}
+
+message RespuestaPuerto {
+    string puerto = 1;
+}
+
+message SolicitudPuertoUsuario {
+    string usuario = 1;
+}
+
+message SolicitudArchivo {
+    string nombre_archivo = 1;
+}
+
+message RespuestaArchivo {
+    string contenido = 1;
+}
+
+message SolicitudCrearArchivo {
+    repeated string nombre_archivo = 1;
+}
+
+message Respuesta {
+    bool exito = 1;
+}
+
+message RespuestaCrearArchivo {
+    bool exito = 1;
+}
