@@ -24,6 +24,8 @@
 
 - Se implementa una arquitectura p2p centralizada basada en servidor, donde los peers se conectarán a un servidor para brindar información de ellos mismos y recibir la misma de otros al hacer consultas con los métodos del servidor. A partir de esas consultas, los peers pueden hacer un proceso de comunicación con el middelware grpc a otros peerServidores y simular la obtención de archivos.
 
+  [![redp2p.png](https://i.postimg.cc/LXjDkknR/redp2p.png)](https://postimg.cc/Ppr1TwWF)
+
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
 
