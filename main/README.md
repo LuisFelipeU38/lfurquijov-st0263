@@ -61,6 +61,7 @@ Para los archivos main del peer:
                  'Reto1y2/main/Servidor
 
 [![imagen-2024-03-05-175841797.png](https://i.postimg.cc/3NsKMT32/imagen-2024-03-05-175841797.png)](https://postimg.cc/p5BN83hd)
+
 5. Referencias:
 
 https://github.com/cpurta/p2p-grpc
