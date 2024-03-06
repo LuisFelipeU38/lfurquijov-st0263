@@ -28,7 +28,6 @@
 
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
-
 - IDE: Visual Studio Code
 - Lenguaje de Programación: Python v3.11.8
 - Librerías - paquetes: 
