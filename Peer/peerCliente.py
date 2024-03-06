@@ -20,11 +20,11 @@ def principal():
     archivos = [servicio_grpc.generar_cadena() for _ in range(1, random.randint(2, 5))]
     conectado = False 
     usuario = ""
-    while True:
-        print("\nOpciones:")
-        imprimir_menu(conectado)
 
-        opcion = input("Opciones: ")
+    while True:
+        print("\nAPI REST:")
+        imprimir_menu(conectado)
+        opcion = input("API REST: ")
 
         if not conectado:
             if opcion == '1':
@@ -53,7 +53,7 @@ def principal():
                 respuesta_grpc = servicio_grpc.obtener_archivo(nombre_archivo, puerto_servidor)
                 archivos.append(respuesta_grpc)
                 servicio_grpc.crear_archivo(respuesta_grpc)
-                print("Respuesta del servidor gRPC:", respuesta_grpc)
+                print("Respuesta del servidor:", respuesta_grpc)
             elif opcion == '3':
                 nombre_archivo = input("Archivo a buscar: ")
                 respuesta_buscar = servicio_rest.buscar(nombre_archivo)
@@ -63,7 +63,7 @@ def principal():
                 print("Respuesta del servidor:", respuesta_buscar)
             elif opcion == '4':
                 respuesta_indexar = servicio_rest.indexar(usuario, archivos)
-                print("Respuesta de indexación de la API REST:", respuesta_indexar)
+                print("Respuesta de indexación del servidor:", respuesta_indexar)
             elif opcion == '5':
                 print("Cerrando sesión en el servidor...")
                 respuesta_cerrar_sesion = servicio_rest.cerrar_sesion(usuario)

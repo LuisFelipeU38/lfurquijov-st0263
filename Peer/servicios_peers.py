@@ -27,7 +27,7 @@ class ServicioEntrePares(peerServidor_pb2_grpc.ServicioEntrePeersServicer):
         if nombre_archivo in lista_archivos:
             return peerServidor_pb2.RespuestaArchivo(contenido=nombre_archivo)
         else:
-            return peerServidor_pb2.RespuestaArchivo(contenido="El Archivo '{}' nose ha encontrado".format(nombre_archivo))
+            return peerServidor_pb2.RespuestaArchivo(contenido="El Archivo '{}' no se ha encontrado".format(nombre_archivo))
 
     def CrearArchivo(self, solicitud, contexto):
         nombre_archivo = solicitud.nombre_archivo
