@@ -29,5 +29,5 @@ class ServicioGRPC:
 
     def generar_cadena(self):
         numero_aleatorio = random.randint(1, 30)
-        resultado = "archivo" + str(numero_aleatorio)
+        resultado = "archivo" + " " + str(numero_aleatorio)
         return resultado

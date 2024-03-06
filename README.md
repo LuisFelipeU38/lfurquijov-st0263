@@ -1,5 +1,8 @@
 # Info de la materia: ST0263 Topicos especiales en Telematica.
 
+## Importante link a video de youtube (actualizado)
+ - https://www.youtube.com/watch?v=JEQM32QmI9c
+
 ## Estudiante(s):
 - **Luis Felipe Urquijo Vargas** 
 - **lfurquijov@eafit.edu.co** 
